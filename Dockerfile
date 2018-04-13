@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Justin Dray <justin@dray.be>
+MAINTAINER Justin Dray <justin@dray.id.au>
 
 RUN apk add --no-cache openvpn openssl
 
