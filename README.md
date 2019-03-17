@@ -51,7 +51,7 @@ By default this image relies on the variables `USERNAME` and `PASSWORD` to be se
 It is possible to use instead a pre-existing volume/file containing the credentials.
 ```Shell
 docker run ... --name=torguard \
-  -e 'REGION=US East' \
+  -e 'REGION=USA-NEW-YORK' \
   -v 'auth.conf:auth.conf' \
   justin8/torguard-openvpn \
     --auth-user-pass auth.conf
@@ -94,3 +94,72 @@ docker run ... --net=torguard_network tutum/curl curl -s http://torguard/
 
 The container is started within the same network as `torguard` but is not behind the VPN.
 It can access services started behind the VPN container such as the HTTP service provided by `myservice`.
+
+
+### Available regions
+
+For the Environment variable REGION (`-e 'REGION=XXX'`)you may use one of the following values:
+```
+Brazil
+Bulgaria
+Canada.Toronto
+Canada.Vancouver
+Chile
+Costa Rica
+Czech
+Denmark
+Egypt
+Finland
+France
+Germany
+Greece
+Hong.Kong
+Hungary
+Iceland
+India
+Ireland
+Isle.of.Man
+Israel
+Italy
+Japan
+Latvia
+Luxembourg
+Malaysia
+Mexico
+Moldova
+Netherlands
+New.Zealand
+Norway
+Poland
+Portugal
+Romania
+Russia.Moscow
+Russia.St.Petersburg
+Saudi.Arabia
+Singapore
+South.Africa
+South.Korea
+Spain
+Sweden
+Switzerland
+Taiwan
+Thailand
+Tunisia
+Turkey
+UK.London
+USA-ATLANTA
+USA-CHICAGO
+USA-DALLAS
+USA-LA
+USA-LAS-VEGAS
+USA-MIAMI
+USA-NEW-JERSEY
+USA-NEW-YORK
+USA-SAN-FRANCISCO
+USA-SEATTLE
+Vietnam
+Australia.Melbourne
+Australia.Sydney
+Austria
+Belgium
+```
