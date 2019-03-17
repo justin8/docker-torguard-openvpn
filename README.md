@@ -51,7 +51,7 @@ By default this image relies on the variables `USERNAME` and `PASSWORD` to be se
 It is possible to use instead a pre-existing volume/file containing the credentials.
 ```Shell
 docker run ... --name=torguard \
-  -e 'REGION=US East' \
+  -e 'REGION=USA-NEW-YORK' \
   -v 'auth.conf:auth.conf' \
   justin8/torguard-openvpn \
     --auth-user-pass auth.conf
