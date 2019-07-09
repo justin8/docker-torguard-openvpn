@@ -3,8 +3,8 @@ MAINTAINER Justin Dray <justin@dray.id.au>
 
 RUN apk add --no-cache openvpn openssl
 
-RUN wget https://torguard.net/downloads/OpenVPN-UDP.zip && \
-    unzip OpenVPN-UDP.zip
+RUN wget https://torguard.net/downloads/OpenVPN-UDP-Linux.zip && \
+    unzip OpenVPN-UDP-Linux.zip
 
 WORKDIR /OpenVPN-UDP
 
